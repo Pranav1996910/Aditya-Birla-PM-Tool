@@ -5,7 +5,6 @@ import {
 } from 'recharts';
 import { api } from '../services/mockApiService';
 import { Project, TimelineEvent, MediaAsset, User, UserRole } from '../types';
-import { generateProjectSummary } from '../services/geminiService';
 import { useAuth } from '../contexts/AuthContext';
 
 const EditIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -165,14 +164,11 @@ const RoleDetailsSection: React.FC<{ title: string; members: User[] }> = ({ titl
 
 const ReportGenerator: React.FC<{ project: Project }> = ({ project }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [summary, setSummary] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
     const handleGenerate = async () => {
         setIsModalOpen(true);
         setIsLoading(true);
-        const result = await generateProjectSummary(project);
-        setSummary(result);
         setIsLoading(false);
     };
     
@@ -210,7 +206,7 @@ const ReportGenerator: React.FC<{ project: Project }> = ({ project }) => {
                                     <div className="h-4 bg-gray-200 dark:bg-gray-700 rounded w-5/6"></div>
                                 </div>
                             ) : (
-                                <div className="prose prose-sm dark:prose-invert max-w-none whitespace-pre-wrap">{summary}</div>
+                                <div className="prose prose-sm dark:prose-invert max-w-none whitespace-pre-wrap">Summary detailsgi</div>
                             )}
                         </div>
                          <div className="p-4 border-t dark:border-gray-700 flex justify-end gap-2">
