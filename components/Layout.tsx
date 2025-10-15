@@ -76,7 +76,7 @@ const Header: React.FC<{toggleSidebar: () => void}> = ({ toggleSidebar }) => {
                             <MenuIcon />
                         </button>
                         <a href="#" className="flex ms-2 md:me-24">
-                            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Aditya Birla PM</span>
+                            <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">BB Project Manager</span>
                         </a>
                     </div>
                     <div className="flex items-center">

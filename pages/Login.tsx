@@ -42,7 +42,7 @@ const Login = () => {
                     <img className="w-full h-full object-cover" src="https://picsum.photos/seed/proud-construction-team/800/1200" alt="A proud team of architects and engineers in front of their completed modern building project." />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-8 left-8">
-                        <h2 className="text-4xl font-bold text-white tracking-tight">Aditya Birla</h2>
+                        <h2 className="text-4xl font-bold text-white tracking-tight">BB Project Manager</h2>
                         <p className="text-gray-200 mt-1">Project Management Platform</p>
                     </div>
                 </div>
