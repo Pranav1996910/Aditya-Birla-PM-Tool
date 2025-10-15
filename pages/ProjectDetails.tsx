@@ -197,7 +197,7 @@ const ReportGenerator: React.FC<{ project: Project }> = ({ project }) => {
                             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Status as of {new Date().toLocaleDateString()}</p>
                         </div>
                          <div className="p-4 border-t dark:border-gray-700 flex justify-end gap-2">
-                            <button onClick={handlePrint} className="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">Print</button>
+                            <button onClick={handlePrint} className="px-4 py-2 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">Download</button>
                             <button onClick={() => setIsModalOpen(false)} className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-600 dark:text-gray-200 dark:hover:bg-gray-500">Close</button>
                         </div>
                     </div>
